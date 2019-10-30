@@ -18,7 +18,7 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
     <title>Frutas</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
     <script>
         var prevScrollpos = window.pageYOffset;
         window.onscroll = function () {
@@ -54,8 +54,8 @@
                         <a class="dropdown-item" href="mel.html">Mel</a>
                     </div>
                 </li>
-                <li class="nav-item"><a class="nav-link textoBranco" href="#login.html">Login</a></li>
-                <li class="nav-item"><a class="nav-link textoBranco" href="#carrinho.html">Carrinho</a></li>
+                <li class="nav-item"><a class="nav-link textoBranco" href="login.html">Login</a></li>
+                <li class="nav-item"><a class="nav-link textoBranco" href="carrinho.html">Carrinho</a></li>
             </ul>
         </div>
     </nav>
@@ -63,14 +63,53 @@
 </header>
 
 <body>
-    <!-- <div style="padding-top:35px">
-        <img src="img/banner.png" style="width: 100%">
-    </div> -->
     <section>
         <div>
-            
+
         </div>
     </section>
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th scope="col">Produto</th>
+                <th scope="col">Preço</th>
+                <th scope="col">Quantidade</th>
+                <th scope="col">Total</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td scope="row">Maçã Gala</td>
+                <td>R$6,48</td>
+                <td>3</td>
+                <td>Total</td>
+            </tr>
+            <tr>
+                <td scope="row">Maçã Gala</td>
+                <td>R$4,99</td>
+                <td>5</td>
+                <td>Total</td>
+            </tr>
+            <tr>
+                <td scope="row">Banana Prata</td>
+                <td>R$4,99</td>
+                <td>5</td>
+                <td>Total</td>
+            </tr>
+            <tr>
+                <td scope="row">Mel Silvestre</td>
+                <td>R$12,90</td>
+                <td>2</td>
+                <td>Total</td>
+            </tr>
+            <tr>
+                <td scope="row">Mel Eucalípto</td>
+                <td>R$10,80</td>
+                <td>3</td>
+                <td>Total</td>
+            </tr>
+        </tbody>
+    </table>
     <!-- ==================================================================================================================== -->
 
     <footer class=" text-center vermelho textoBranco">
@@ -94,10 +133,3 @@
 </body>
 
 </html>
-<!-- TODO >>
-- Banner produtos
-- Fotos produtos
-- Tela Carrinho
-- Tela produtos
-- Tela Confirmação
-- Escolher fontes conteúdo -->
