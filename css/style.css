@@ -1,0 +1,74 @@
+/* Vermelho         #D20528
+Vermelho Escuro  #612935
+Amarelo          #FFD500
+Marrom           #855D2B
+Azul             #03AFD1
+Azul Escuro      #124B7F 
+Cinza            #4C4C4E
+Branco           #F0F1F1 */
+@font-face {
+  font-family: 'Oliviare', serif;
+  src: url(fonts/Oliviare.ttf);
+}
+
+.tales {
+  width: 100%;
+}
+.carousel-inner{
+  width:100%;
+  max-height: 400px !important;
+}
+
+.btn-warning{
+  background-color: #FFD500 !important;
+  border-color: #FFD500 !important;
+}
+
+h1{
+  font-family: 'Oliviare', serif;
+  font-size: 70px;
+  text-shadow: 3px 3px rgb(216, 215, 215);
+}
+
+h2{
+  font-family: 'Roboto Slab', serif;
+  color: rgb(93, 93, 94);
+}
+
+h3{
+  font-family: 'Roboto Slab', serif;
+  color: rgb(93, 93, 94);
+}
+
+h4{
+  font-family: 'Bree Serif', serif;
+  color:#D20528;
+}
+
+p{font-family: 'Montserrat', sans-serif;}
+ul{font-family: 'Montserrat', sans-serif; color: rgb(93, 93, 94);}
+
+body{
+  padding-top: 30px;
+  margin: 0;
+  display:flex;
+  flex-direction: column;
+}
+
+.vermelho{background-color: #D20528;}
+.branco{background-color:  #F0F1F1;}
+.azul{background-color:#03AFD1;}
+
+.textoAmarelo{color: #FFD500;}
+.textoVermelho{color: #D20528;}
+.textoAzul{color: #03AFD1;}
+.textoBranco{color: #F0F1F1;}
+.textoCinza{color: rgb(93, 93, 94);}
+
+#navbar {
+  z-index: 100;
+  position: fixed; /* Make it stick/fixed */
+  top: 0; /* Stay on top */
+  width: 100%; /* Full width */
+  transition: top 0.3s; /* Transition effect when sliding down (and up) */
+}
