@@ -50,12 +50,22 @@ class UI {
         });
         
         productsDOM.innerHTML = result;
+
+    }
+    getBagButtons(){
+        const buttons = [...document.querySelectorAll(".bag-btn")];
+        buttons.forEach(button =>{
+            let id = button.dataset.id;
+            console.log(id);
+        })
     }
 }
 
 //local storage
 class Storage{
-
+    static saveProducts(products){
+    localStorage.setItem("products",JSON.stringify(products));
+    }
 }
 
 document.addEventListener("DOMContentLoaded",() =>{
@@ -63,5 +73,10 @@ document.addEventListener("DOMContentLoaded",() =>{
     const products = new Products();
 
     // get all products
-    products.getProducts().then(products => ui.displayProducts(products))
+    products.getProducts().then(products => {
+        ui.displayProducts(products);
+        Storage.saveProducts(products);
+    }).then(()=>{
+        ui.getBagButtons();
+    });
 });
