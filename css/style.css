@@ -48,11 +48,28 @@ h4{
 p{font-family: 'Montserrat', sans-serif;}
 ul{font-family: 'Montserrat', sans-serif; color: rgb(93, 93, 94);}
 
+html{
+  height: 100%;
+}
+
 body{
-  padding-top: 30px;
+  padding-top: 60px;
   margin: 0;
   display:flex;
   flex-direction: column;
+
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+}
+
+footer{
+  background: #D20528;
+  color: #F0F1F1;
+  padding: 3em;
+
+  margin-top: auto;
 }
 
 .vermelho{background-color: #D20528;}
