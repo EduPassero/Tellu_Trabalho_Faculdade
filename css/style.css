@@ -6,10 +6,17 @@ Azul             #03AFD1
 Azul Escuro      #124B7F 
 Cinza            #4C4C4E
 Branco           #F0F1F1 */
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Bree+Serif|Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Bree+Serif|Montserrat|Roboto+Slab&display=swap');
+
 @font-face {
   font-family: 'Oliviare', serif;
   src: url(fonts/Oliviare.ttf);
 }
+
+
 
 .tales {
   width: 100%;
